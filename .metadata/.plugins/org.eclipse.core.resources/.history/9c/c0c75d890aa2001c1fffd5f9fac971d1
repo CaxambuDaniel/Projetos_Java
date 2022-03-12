@@ -17,9 +17,6 @@ public class CriaConta {
 		
 		segundaConta.deposita(50);
 		System.out.println(segundaConta.saldo);
-		
-		segundaConta.deposita(50);
-		System.out.println(segundaConta.saldo);
 				
 		
 	}

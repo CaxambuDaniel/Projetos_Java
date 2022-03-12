@@ -7,8 +7,8 @@ public class Conta {
 	int numero;
 	String titular;
 	
-	public void deposita(double valor) {
-		this.saldo += valor;
+	private void deposita(double valor) {
+		saldo += valor;
 	}
 	
 	private void saca() {
