@@ -20,9 +20,6 @@ public class CriaConta {
 		
 		segundaConta.deposita(50);
 		System.out.println(segundaConta.saldo);
-		
-		primeiraConta.saca(50);
-		System.out.println(primeiraConta.saldo);
 				
 		
 	}
