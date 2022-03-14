@@ -11,9 +11,11 @@ public class CriaConta {
 		Conta contaDoDaniel = new Conta();
 		contaDoDaniel .deposita(1000);
 		
-		contaDoDaniel.titular = daniel;	
+		contaDoDaniel.titular = daniel;
 		
-		System.out.println(contaDoDaniel.titular.nome);
+		
+		
+		
 		
 	}
 }
