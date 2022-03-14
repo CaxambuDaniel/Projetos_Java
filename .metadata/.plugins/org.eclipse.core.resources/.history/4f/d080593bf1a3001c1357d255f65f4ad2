@@ -9,12 +9,6 @@ public class CriaConta {
 		
 		System.out.println(conta.getNumero());
 		
-		Cliente daniel = new Cliente();
-		daniel.setNome("Daniel Carvalho de Souza");
-		
-		conta.setTitular(daniel);
-		System.out.println(conta.getTitular().getNome());
-		
 		
 		
 	}
