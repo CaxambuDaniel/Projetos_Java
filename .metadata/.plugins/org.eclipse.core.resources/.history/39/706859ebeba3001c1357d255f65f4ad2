@@ -15,9 +15,7 @@ public class CriaConta {
 		
 		System.out.println(contaDoDaniel.titular.getNome());
 		System.out.println(contaDoDaniel.titular.getCpf());
-		System.out.println(contaDoDaniel.titular.getProfissao());
-		System.out.println(contaDoDaniel.getSaldo());
-		
+		System.out.println(contaDoDaniel.titular.getP());
 		
 	}
 }

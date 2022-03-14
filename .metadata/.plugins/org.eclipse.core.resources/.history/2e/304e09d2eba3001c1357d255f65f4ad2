@@ -2,7 +2,7 @@ package byteBank;
 
 public class Conta {
 	
-	private double saldo;
+	double saldo;
 	int agencia;
 	int numero;
 	Cliente titular;
@@ -33,13 +33,7 @@ public class Conta {
 
 	}
 		
-	public double getSaldo() {
-		return this.saldo;
-	}
-	
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
+
 }
 
 
