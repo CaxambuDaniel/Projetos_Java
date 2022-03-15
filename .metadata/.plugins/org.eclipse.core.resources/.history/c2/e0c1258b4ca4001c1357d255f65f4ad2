@@ -5,7 +5,6 @@ public class CriaConta {
 		
 		Conta conta = new Conta(1337,152425);
 		
-		System.out.println(conta.getAgencia());
 		System.out.println(conta.getNumero());
 		
 		Cliente daniel = new Cliente();
