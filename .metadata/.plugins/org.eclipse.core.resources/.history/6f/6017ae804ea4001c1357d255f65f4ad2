@@ -3,13 +3,12 @@ package byteBank;
 public class Conta {
 	
 	private double saldo;
-	private int agencia;
-	private int numero;
-	private Cliente titular;
-	private static int total;
+	int agencia;
+	int numero;
+	Cliente titular;
+	
 	
 	public Conta(int agencia ,int numero) {
-		total++;
 		this.agencia = agencia;
 		this.numero = numero;
 	}
@@ -43,9 +42,16 @@ public class Conta {
 	public double getSaldo() {
 		return this.saldo;
 	}	
-
+	
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
 	public int getAgencia () {
 		return this.agencia;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 	
 	public int getNumero() {
@@ -58,10 +64,6 @@ public class Conta {
 	
 	public Cliente getTitular() {
 		return titular;
-	}
-	
-	public static int getTotal() {
-		return total;
 	}
 }
 

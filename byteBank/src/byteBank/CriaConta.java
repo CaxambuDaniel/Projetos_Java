@@ -3,17 +3,11 @@ package byteBank;
 public class CriaConta {
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta(1337,152425);
-		
-		System.out.println(conta.getAgencia());
-		System.out.println(conta.getNumero());
-		
-		Cliente daniel = new Cliente();
-		daniel.setNome("Daniel Carvalho de Souza");
-		
-		conta.setTitular(daniel);
-		System.out.println(conta.getTitular().getNome());
-		
+		Conta conta1 = new Conta(1337,152425);
+		Conta conta2 = new Conta(1335,152255);
+		Conta conta3 = new Conta(1334,152655);
+
+		System.out.println(Conta.getTotal());
 		
 		
 	}
