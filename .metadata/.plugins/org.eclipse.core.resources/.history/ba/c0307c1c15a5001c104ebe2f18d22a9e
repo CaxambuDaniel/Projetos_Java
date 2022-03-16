@@ -7,8 +7,6 @@ public class TestaClasses {
 		
 		
 		System.out.println(daniel.getNome());
-		System.out.println(daniel.getCpf());
-		System.out.println(daniel.getSalario());
 
 	}
 }
