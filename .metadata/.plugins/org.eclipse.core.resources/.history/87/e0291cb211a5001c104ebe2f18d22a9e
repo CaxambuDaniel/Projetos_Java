@@ -3,7 +3,7 @@ package byteBank;
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	private double salario;
+	private D salario;
 	
 	
 	public String getNome() {
@@ -18,11 +18,10 @@ public class Funcionario {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public double getSalario() {
+	public String getSalario() {
 		return salario;
 	}
-	public void setSalario(double salario) {
+	public void setSalario(String salario) {
 		this.salario = salario;
 	}
-	
 }
