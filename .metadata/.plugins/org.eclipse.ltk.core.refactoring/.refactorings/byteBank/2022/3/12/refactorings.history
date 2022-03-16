@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;byteBank.CriaConta&apos; to &apos;TestaClasses&apos;&#x0D;&#x0A;- Original project: &apos;byteBank&apos;&#x0D;&#x0A;- Original element: &apos;byteBank.CriaConta&apos;&#x0D;&#x0A;- Renamed element: &apos;byteBank.TestaClasses&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CriaConta&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;byteBank{CriaConta.java[CriaConta" matchStrategy="1" name="TestaClasses" qualified="false" references="true" similarDeclarations="false" stamp="1647425170732" textual="false" version="1.0"/>
+</session>
