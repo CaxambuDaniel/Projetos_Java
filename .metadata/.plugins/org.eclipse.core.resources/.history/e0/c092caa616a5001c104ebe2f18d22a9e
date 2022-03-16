@@ -3,9 +3,7 @@ package byteBank;
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		Gerente daniel = new Gerente();
-		
-		daniel.setNome("Daniel Carvalho de Souza");
+		Funcionario daniel = new Funcionario("Daniel Carvalho", "123.456.789-12",10000);
 		
 		
 		System.out.println(daniel.getNome());

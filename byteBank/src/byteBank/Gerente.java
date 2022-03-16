@@ -1,5 +1,7 @@
 package byteBank;
 
-public class Gerente {
+public class Gerente extends Funcionario {
+	
+	
 
 }
