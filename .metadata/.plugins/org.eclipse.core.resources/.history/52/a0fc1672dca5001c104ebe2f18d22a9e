@@ -14,7 +14,7 @@ public class TestaClasses {
 		System.out.println(daniel.getNome());
 		System.out.println(daniel.autentica(121314));
 		System.out.println(daniel.getSalario() );
-		System.out.println(daniel.getBonificacao());
+		System.out.println(daniel.getBonificacao()+ daniel.getSalario());
 		
 		
 
