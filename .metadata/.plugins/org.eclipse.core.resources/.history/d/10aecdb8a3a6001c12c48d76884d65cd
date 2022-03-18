@@ -6,7 +6,7 @@ public class TestaClasses {
 		Funcionario daniel = new Gerente();
 		
 		daniel.setNome("Daniel Carvalho de Souza");
-		daniel.setSalario(0);
+		daniel.setSalario(1000);
 		
 		Funcionario pedro = new Funcionario();
 		pedro.setSalario(100);
