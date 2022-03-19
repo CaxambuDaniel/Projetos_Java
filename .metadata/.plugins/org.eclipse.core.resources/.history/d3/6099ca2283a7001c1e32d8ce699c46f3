@@ -7,12 +7,13 @@ import byteBank.funcionario.Gerente;
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		Funcionario daniel = new Gerente("daniel","11122233344",10000,214578);
+		Funcionario daniel = new Gerente();
 		
+		daniel.setNome("Daniel Carvalho de Souza");
+		daniel.setSalario(0);
 		
-		
-		Funcionario pedro = new Funcionario("Pedro","22211133344",15000);
-		
+		Funcionario pedro = new Funcionario();
+		pedro.setSalario(100);
 		
 		
 		ControleBonificacao controle = new ControleBonificacao();
