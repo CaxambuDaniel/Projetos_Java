@@ -11,7 +11,9 @@ public abstract class Funcionario {
 		this.cpf = cpf;
 	}
 	
-	public abstract double getBonificacao();
+	public double getBonificacao() {
+		return this.salario * 0.1;
+	}
 	
 	public String getNome() {
 		return nome;
