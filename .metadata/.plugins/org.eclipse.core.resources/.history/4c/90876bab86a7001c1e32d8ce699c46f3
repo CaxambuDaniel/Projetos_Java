@@ -1,6 +1,6 @@
 package byteBank.funcionario;
 
-public abstract class Funcionario {
+public class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
