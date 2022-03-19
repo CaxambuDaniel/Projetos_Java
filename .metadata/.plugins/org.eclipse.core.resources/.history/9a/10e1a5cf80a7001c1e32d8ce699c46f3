@@ -1,9 +1,5 @@
 package byteBank;
 
-import byteBank.funcionario.ControleBonificacao;
-import byteBank.funcionario.Funcionario;
-import byteBank.funcionario.Gerente;
-
 public class TestaClasses {
 	public static void main(String[] args) {
 
