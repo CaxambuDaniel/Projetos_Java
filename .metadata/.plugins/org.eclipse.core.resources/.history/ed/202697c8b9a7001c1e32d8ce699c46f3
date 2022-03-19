@@ -6,5 +6,12 @@ public class Designer extends Funcionario {
 		super(nome, cpf, salario);	
 	}
 
+	@Override
+	public double getBonificacao() {
+		// TODO Auto-generated method stub
+		return 200;
+	}
+	
+	
 
 }
