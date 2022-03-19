@@ -1,0 +1,5 @@
+package byteBank.conta;
+
+public class ContaCorrente {
+
+}
