@@ -2,7 +2,7 @@ package byteBank.conta;
 
 import byteBank.cliente.Cliente;
 
-public abstract class Conta {
+public class Conta {
 
 	private double saldo;
 	private int agencia;
