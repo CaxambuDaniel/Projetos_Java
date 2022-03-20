@@ -1,8 +1,6 @@
 package byteBank.funcionario;
 
-import byteBank.Interfaces.Autenticacao;
-
-public class Gerente extends Funcionario implements Autenticacao{
+public class Gerente extends Funcionario {
 	
 	private int senha;
 	

@@ -14,14 +14,14 @@ import byteBank.sistema.SistemaInterno;
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		Autenticacao g = new Gerente(null, null, 0, 2222);
+		Autenticacao g = new Gerente(null, null, 0, 0);
 
 		Autenticacao c = new Cliente(null, null, null);
 
 		Autenticacao adm = new Administrador(null, null, 0);
 		
-		g.setSenha(222);
+		g.setSenha(2222);
 		
-		System.out.println(g.autentica(2222));
+		System.out.println(g.autentica(0));
 	}
 }
