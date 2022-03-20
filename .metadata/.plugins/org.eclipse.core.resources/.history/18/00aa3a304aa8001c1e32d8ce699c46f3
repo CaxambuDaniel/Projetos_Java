@@ -28,6 +28,17 @@ public class Cliente implements Autenticacao {
 		return this.profissao;
 	}
 
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setProfissao(String profissao) {
+		this.profissao = profissao;
+	}
 
 	@Override
 	public void setSenha(int Senha) {
