@@ -22,10 +22,4 @@ public class Gerente extends Funcionario {
         return super.salario *= 0.1;
     }
 
-
-	public void setSenha(int i) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

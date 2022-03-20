@@ -3,18 +3,23 @@ package byteBank;
 import byteBank.conta.ContaCorrente;
 import byteBank.conta.ContaPoupanca;
 import byteBank.funcionario.ControleBonificacao;
-import byteBank.funcionario.Designer;
 import byteBank.funcionario.Funcionario;
 import byteBank.funcionario.Gerente;
 
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		Gerente g = new Gerente(null, null, 12000, 0);
-		Designer d = new Designer(null, null, 5000);
+		ContaCorrente cc = new ContaCorrente(1542, 12);
+		ContaPoupanca cp = new ContaPoupanca(4512, 45);
 		
-		System.out.println(g.getBonificacao());
-		System.out.println(d.getBonificacao());
+		cc.deposita(10000);		
+		cc.transfere(500, cp);
+		cc.saca(1000);
+		
+		
+		System.out.println("CC: " + cc.getSaldo());
+		System.out.println("CP: " + cp.getSaldo());
+		System.out.println("CC: " + cc.getSaldo());
 				
 		
 		

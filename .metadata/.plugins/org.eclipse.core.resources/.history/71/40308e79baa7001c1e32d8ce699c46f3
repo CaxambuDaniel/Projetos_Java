@@ -10,7 +10,9 @@ public class Designer extends Funcionario {
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
 		return 200;
-	}	
+	}
+	
+	
 	
 
 }
