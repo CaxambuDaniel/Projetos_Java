@@ -1,6 +1,6 @@
 package byteBank;
 
-import byteBank.Interfaces.Autentica;
+import byteBank.Interfaces.Autenticacao;
 import byteBank.cliente.Cliente;
 import byteBank.conta.ContaCorrente;
 import byteBank.conta.ContaPoupanca;
@@ -14,11 +14,11 @@ import byteBank.sistema.SistemaInterno;
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		Autentica g = new Gerente(null, null, 0, 2222);
+		Autenticacao g = new Gerente(null, null, 0, 2222);
 
-		Autentica c = new Cliente(null, null, null);
+		Autenticacao c = new Cliente(null, null, null);
 
-		Autentica adm = new Administrador(null, null, 0);
+		Autenticacao adm = new Administrador(null, null, 0);
 		
 		g.setSenha(222);
 		

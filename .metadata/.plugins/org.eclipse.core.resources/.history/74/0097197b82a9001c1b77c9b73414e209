@@ -1,8 +1,8 @@
 package byteBank.cliente;
 
-import byteBank.Interfaces.Autentica;
+import byteBank.Interfaces.Autenticacao;
 
-public class Cliente implements Autentica {
+public class Cliente implements Autenticacao {
 	private String nome;
 	private String cpf;
 	private String profissao;

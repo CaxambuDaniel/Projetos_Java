@@ -1,13 +1,13 @@
 package byteBank.sistema;
 
-import byteBank.Interfaces.Autentica;
+import byteBank.Interfaces.Autenticacao;
 import byteBank.funcionario.Gerente;
 
 public class SistemaInterno{
 
     private int senha = 2222;
 
-    public void autentica(Autentica a){
+    public void autentica(Autenticacao a){
 
         boolean autenticou = a.autentica(this.senha);
 
