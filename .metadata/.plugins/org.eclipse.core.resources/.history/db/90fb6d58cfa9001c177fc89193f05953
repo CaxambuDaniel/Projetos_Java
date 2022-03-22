@@ -1,8 +1,6 @@
 package byteBank.conta;
 
-import byteBank.Interfaces.Tributavel;
-
-public class ContaCorrente extends Conta implements Tributavel {
+public class ContaCorrente extends Conta {
 	
 	public ContaCorrente (int agencia, int numero) {
 		super(agencia , numero);
