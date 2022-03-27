@@ -18,14 +18,9 @@ public class TestaClasses {
 
 		ContaCorrente cc = new ContaCorrente(0, 0);
 		cc.deposita(100);
+		cc.saca(110);
 		
-		SeguroDeVida s = new SeguroDeVida();
-		
-		CalculadorDeImposto calc = new CalculadorDeImposto();
-		calc.registra(cc);
-		calc.registra(s);
-		
-		System.out.println(calc.getTotalImposto());
+		System.out.println(cc.getSaldo());
 		
 	}
 }
