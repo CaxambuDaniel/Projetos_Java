@@ -7,7 +7,7 @@ public class Fluxo {
 		try {
 			metodo1();
 			System.out.println("Fim do main");
-		} catch (ArithmeticException| NullPointerException | MyException ex) {
+		} catch (Exception ex) {
 			String msg = ex.getMessage();
 			System.out.println("Errrou!!!! " + msg);
 			ex.printStackTrace();
