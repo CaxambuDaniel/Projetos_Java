@@ -8,7 +8,7 @@ public class Conexao {
 
     public void leDados() {
         System.out.println("Recebendo dados");
-            //throw new IllegalStateException();
+            throw new IllegalStateException();
     }
 
     public void fecha() {
