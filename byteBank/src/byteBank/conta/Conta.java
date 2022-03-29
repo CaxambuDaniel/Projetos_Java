@@ -26,7 +26,7 @@ public abstract class Conta {
 		this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) {		
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {		
 		    this.saca(valor);
 		    destino.deposita(valor);
 	}
