@@ -3,6 +3,12 @@ package br.com.byteBank.conta;
 import br.com.byteBank.cliente.Cliente;
 import br.com.byteBank.exceptions.SaldoInsuficienteException;
 
+/**
+ * Classe mãe que define a base para a criação de uma conta *
+ * 
+ * @author Daniel Carvalho
+ *
+ */
 public abstract class Conta {
 
 	protected double saldo;
@@ -11,24 +17,53 @@ public abstract class Conta {
 	private Cliente titular;
 	private static int total;
 
+	/**
+	 * Construtor da classe, contendo as informações mínimas para a criação de uma
+	 * conta
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
 	public Conta(int agencia, int numero) {
 		total++;
 		this.agencia = agencia;
 		this.numero = numero;
 	}
 
-	public abstract void deposita(double valor); 
+	/**
+	 * Metodo abstrado que define (a partir da classe filha)os parametros para a
+	 * realização de um deposito
+	 * 
+	 * @param valor
+	 */
+	public abstract void deposita(double valor);
 
-	public void saca(double valor)throws SaldoInsuficienteException  {
-		if (this.saldo < valor) {			
-			throw new SaldoInsuficienteException("Saldo: " + getSaldo() + ", valor" + valor ); 
-		} 
+	/**
+	 * Define, verificando o saldo em conta, os parametros para realização de um
+	 * saque.
+	 * 
+	 * Caso os requisitos não sejam atendidos (no caso, o saldo precisa ser maior ou
+	 * igual ao valor do saque) a exception SaldoInsuficienteException é apresentada
+	 * informando o valor do saldo em conta e o valor da tentativa de saque
+	 * 
+	 * @param valor
+	 * @throws SaldoInsuficienteException
+	 */
+	public void saca(double valor) throws SaldoInsuficienteException {
+		if (this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo: " + getSaldo() + ", valor" + valor);
+		}
 		this.saldo -= valor;
 	}
-
-	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {		
-		    this.saca(valor);
-		    destino.deposita(valor);
+	/**
+	 * Define os parametros para a realização de uma transferencia que são: o valor em conta (verificado pelo metodo saca())e uma conta destino
+	 * @param valor
+	 * @param destino
+	 * @throws SaldoInsuficienteException
+	 */
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
+		this.saca(valor);
+		destino.deposita(valor);
 	}
 
 	public double getSaldo() {
