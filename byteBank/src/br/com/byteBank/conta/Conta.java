@@ -7,7 +7,7 @@ import br.com.byteBank.exceptions.SaldoInsuficienteException;
  * Classe mãe que define a base para a criação de uma conta *
  * 
  * @author Daniel Carvalho
- *
+ * @version 1.0
  */
 public abstract class Conta {
 
@@ -55,8 +55,11 @@ public abstract class Conta {
 		}
 		this.saldo -= valor;
 	}
+
 	/**
-	 * Define os parametros para a realização de uma transferencia que são: o valor em conta (verificado pelo metodo saca())e uma conta destino
+	 * Define os parametros para a realização de uma transferencia que são: o valor
+	 * em conta (verificado pelo metodo saca())e uma conta destino
+	 * 
 	 * @param valor
 	 * @param destino
 	 * @throws SaldoInsuficienteException
