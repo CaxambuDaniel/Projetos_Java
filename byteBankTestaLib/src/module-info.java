@@ -1,0 +1,3 @@
+module byteBankTestaLib {
+	requires byteBank;
+}
