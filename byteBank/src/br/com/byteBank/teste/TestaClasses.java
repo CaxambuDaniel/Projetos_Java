@@ -1,20 +1,19 @@
 package br.com.byteBank.teste;
 
+import br.com.byteBank.conta.Conta;
 import br.com.byteBank.conta.ContaCorrente;
+import br.com.byteBank.conta.ContaPoupanca;
 import br.com.byteBank.exceptions.SaldoInsuficienteException;
 
 public class TestaClasses {
 	public static void main(String[] args) {
 
-		ContaCorrente cc = new ContaCorrente(0, 0);
-		cc.deposita(100);
-		try {
-			cc.saca(110);
-		} catch (SaldoInsuficienteException e) {
-			System.out.println(e.getMessage());
-		}
+		Conta cc = new ContaCorrente(3347, 321456);
+		Conta cp = new ContaPoupanca(7745, 112445);
 		
-		System.out.println(cc.getSaldo());
+		System.out.println(cc);
+		System.out.println(cp);
+		
 		
 	}
 }
