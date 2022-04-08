@@ -41,5 +41,14 @@ public class ContaCorrente extends Conta implements Tributavel {
 	public double getValorImposto() {
 		return super.getSaldo() * 0.01;
 	}
+	
+	/**
+	 * Sobrescrição do método ToString, da classe Conta.
+	 * O intuito da sobrescrição é deixar mais clara a mensagem apresentada ao imprimirmos na tela a referencia de um objeto Conta Corrente
+	 */
+	@Override
+	public String toString() {
+		return "Conta Corrente, " + super.toString();
+	}
 
 }
