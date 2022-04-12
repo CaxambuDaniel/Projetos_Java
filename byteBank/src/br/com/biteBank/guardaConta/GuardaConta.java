@@ -1,5 +1,12 @@
 package br.com.biteBank.guardaConta;
 
-public class GuardaConta {
+import br.com.byteBank.conta.Conta;
 
+public class GuardaConta {
+	
+	private Conta [] referencicas;
+	
+	public GuardaConta () {
+		this.referencicas = new Conta [10];
+	}
 }
