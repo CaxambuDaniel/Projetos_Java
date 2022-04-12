@@ -2,12 +2,12 @@ package br.com.biteBank.guardaConta;
 
 import br.com.byteBank.conta.Conta;
 
-public class GuardaConta {
+public class GuardadorDeContas {
 
     private Conta[] referencias;
     private int posicaoLivre;
 
-    public GuardaConta() {
+    public GuardadorDeContas() {
         this.referencias = new Conta[10];
         this.posicaoLivre = 0;
     }
@@ -17,4 +17,11 @@ public class GuardaConta {
         this.posicaoLivre++;
     }
 
+    public int getQuantidadeDeElementos() {
+        return this.posicaoLivre;
+    }
+
+    public Conta getReferencia(int pos) {
+        return this.referencias[pos];
+    }
 }
